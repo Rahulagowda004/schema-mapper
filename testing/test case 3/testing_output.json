@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "basics": {
+    "name": "RAHUL A GOWDA",
+    "label": "AI Executive",
+    "email": "rahulgowda277@gmail.com",
+    "phone": "+91 8217691992",
+    "url": "",
+    "location": {
+      "address": "Bangalore, India",
+      "postalCode": "",
+      "city": "Bangalore",
+      "countryCode": "IN",
+      "region": "Karnataka"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "rahulagowda",
+        "url": "https://linkedin.com/in/rahulagowda"
+      },
+      {
+        "network": "GitHub",
+        "username": "Rahulagowda004",
+        "url": "https://github.com/Rahulagowda004"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "iTCart Pvt. Ltd.",
+      "location": "Bangalore, India",
+      "description": "Technology Company",
+      "position": "AI Executive \u2013 Founder\u2019s Office",
+      "url": "https://itcart.io/",
+      "startDate": "2025-06-01",
+      "endDate": "2025-08-12",
+      "summary": "Led AI R&D under CTO Office; designed ML workflows and agentic AI tools for AiXRush in collaboration with USL.",
+      "highlights": [
+        "Proposed and guided the integration of AI solutions for AiXQP, an AI-driven learning and development platform."
+      ]
+    },
+    {
+      "name": "URSC (ISRO)",
+      "location": "Bangalore, India",
+      "description": "Space Research Organization",
+      "position": "Project Trainee",
+      "url": "https://www.ursc.gov.in/",
+      "startDate": "2025-03-01",
+      "endDate": "2025-06-01",
+      "summary": "Built Generative and Agentic AI apps with Team Gyaan.",
+      "highlights": [
+        "Researched LLM intelligence via question-based evaluation.",
+        "Developed a CNN model for bone fracture detection with SHAP-based explainability.",
+        "Created LightRAG-powered chatbots for internal research support."
+      ]
+    },
+    {
+      "name": "Al-Zira Technologies",
+      "location": "Remote",
+      "description": "AI Technology Company",
+      "position": "AI Engineer Intern (Intern Lead)",
+      "url": "https://www.linkedin.com/company/al-zira-technology-private-limited/?originalSubdomain=in",
+      "startDate": "2024-10-01",
+      "endDate": "2025-03-01",
+      "summary": "Built agentic AI tools using LangChain and LangGraph.",
+      "highlights": [
+        "Integrated Neo4j, vector embeddings, and email with Dockerized chatbots."
+      ]
+    },
+    {
+      "name": "Aspire Technologies",
+      "location": "Bangalore, India",
+      "description": "Technology Company",
+      "position": "AI Business Intelligence Intern",
+      "url": "https://www.aspiretechnology.com/",
+      "startDate": "2024-09-01",
+      "endDate": "2025-03-01",
+      "summary": "Worked on preprocessing, visualization, and model building for BI solutions.",
+      "highlights": [
+        "Built inference pipelines using Pandas, NumPy, Scikit-learn, and Seaborn."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Vemana Institute of Technology",
+      "url": "https://vemanait.edu.in/",
+      "area": "Artificial Intelligence",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2021-12-01",
+      "endDate": "2025-06-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Proficient",
+      "keywords": [
+        "Python",
+        "Java",
+        "C"
+      ]
+    },
+    {
+      "name": "Tools & Frameworks",
+      "level": "Proficient",
+      "keywords": [
+        "Scikit-Learn",
+        "TensorFlow",
+        "Hugging Face",
+        "OpenCV",
+        "PyTorch",
+        "Docker",
+        "FastAPI",
+        "Flask"
+      ]
+    },
+    {
+      "name": "Machine Learning & Deep Learning",
+      "level": "Advanced",
+      "keywords": [
+        "Model Development",
+        "Neural Networks",
+        "NLP",
+        "Deployment"
+      ]
+    },
+    {
+      "name": "Generative and Agentic AI",
+      "level": "Advanced",
+      "keywords": [
+        "Finetuning LLM",
+        "LangChain",
+        "LangGraph",
+        "crewAI",
+        "Phidata",
+        "LangSmith",
+        "NLP",
+        "Vector"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Artificial Intelligence",
+      "keywords": [
+        "Generative AI",
+        "Agentic AI"
+      ]
+    },
+    {
+      "name": "Hackathons",
+      "keywords": [
+        "VIT Hackathon",
+        "Hackmania",
+        "Securathon"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "http://json-schema.org/draft-04/schema#",
+    "version": "v1.0.0",
+    "lastModified": "2023-11-23T12:00:00"
+  }
+}

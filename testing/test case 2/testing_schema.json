@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "basics": {
+    "name": "1651561651",
+    "label": "AI Executive",
+    "email": "rahulgowda277@gmail.com",
+    "phone": "+91 821
+        "network": "GitHub",
+        "username": "Rahulagowda004",
+        "url": "https://github.com/Rahulagowda004"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Vemana Institute of Technology",
+      "url": "https://vemanait.edu.in/",
+      "area": "Artificial Intelligence",
+      "studyType": "Bacheelor of Engineering",
+      "startDate": "2021-12-01",
+      "endDate": "2025-06-01",
+      "courses": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "SmartHealth Assistant",
+      "description": "AI Medical Chatbot with Graph Database",
+      "highlights": [
+        "Built a production-ready LangGraph system for symptom and vital-based medical assistance.",
+        "Dockerized and deployed the end-to-end application for scalable production use."
+      ],
+      "keywords": [
+        "LangGraph",
+        "Google Gemini",
+        "Neo4j",
+        "LangChain",
+        "Python",
+        "Docker"
+      ],
+      "startDate": "Jan-2025",
+      "endDate": "2025-12-31",
+      "url": "https://github.com/Rahulagowda004/SmartHealth-Assistant",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Personal Project"
+    },
+    {
+      "name": "Phishy the Phishing Detector Extension",
+      "description": "Phishing Link and Message Detection Browser Extension",
+      "highlights": [
+        "Built a phishing detection browser extension using a BERT-based model and integrated web stack."
+      ],
+      "keywords": [
+        "BERT",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Flask"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "url": "https://github.com/Rahulagowda004/Phishy_the_phishing_detector_extension",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Personal Project",
+      "type": "application"
+    }
+  ]
+}
