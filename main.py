@@ -71,3 +71,8 @@ class SchemaMapper:
         except Exception as e:
             logging.error(f"Error in json_generator: {e}")
             return None
+
+if __name__ == "__main__":
+    mapper = SchemaMapper()
+    result = mapper.json_generator(passage=Path("testcases/test case 3/resume.txt"), schema=Path("testcases/test case 3/convert your resume to this schema.json"))
+    print(result)
