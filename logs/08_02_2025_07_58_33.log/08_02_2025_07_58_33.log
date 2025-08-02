@@ -1,0 +1,6 @@
+[ 2025-08-02 07:59:45,621 ] 59 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 07:59:45,637 ] 63 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 07:59:45,637 ] 65 root - INFO - Generating JSON initialized
+[ 2025-08-02 08:00:20,209 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 08:00:20,242 ] 67 root - INFO - Generating JSON completed
+[ 2025-08-02 08:00:20,242 ] 183 root - INFO - Schema mapping completed successfully via Streamlit app

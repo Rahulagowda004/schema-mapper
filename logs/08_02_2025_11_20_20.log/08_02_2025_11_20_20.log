@@ -1,0 +1,15 @@
+[ 2025-08-02 11:20:37,871 ] 60 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 11:20:37,900 ] 64 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 11:20:37,900 ] 66 root - INFO - Generating JSON initialized
+[ 2025-08-02 11:21:02,366 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 11:21:02,398 ] 68 root - INFO - Generating JSON completed
+[ 2025-08-02 11:27:57,376 ] 60 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 11:27:57,390 ] 64 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 11:27:57,390 ] 66 root - INFO - Generating JSON initialized
+[ 2025-08-02 11:28:05,849 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 11:28:05,864 ] 68 root - INFO - Generating JSON completed
+[ 2025-08-02 11:43:26,823 ] 60 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 11:43:26,863 ] 64 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 11:43:26,863 ] 66 root - INFO - Generating JSON initialized
+[ 2025-08-02 11:43:57,649 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 11:43:57,660 ] 68 root - INFO - Generating JSON completed

@@ -1,0 +1,20 @@
+[ 2025-08-02 08:52:24,938 ] 59 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 08:52:24,956 ] 63 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 08:52:24,962 ] 65 root - INFO - Generating JSON initialized
+[ 2025-08-02 08:52:50,296 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 08:52:50,310 ] 67 root - INFO - Generating JSON completed
+[ 2025-08-02 08:55:50,256 ] 59 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 08:55:50,282 ] 63 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 08:55:50,282 ] 65 root - INFO - Generating JSON initialized
+[ 2025-08-02 08:56:16,110 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 08:56:16,126 ] 67 root - INFO - Generating JSON completed
+[ 2025-08-02 09:01:08,401 ] 59 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 09:01:08,418 ] 63 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 09:01:08,418 ] 65 root - INFO - Generating JSON initialized
+[ 2025-08-02 09:01:35,108 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 09:01:35,124 ] 67 root - INFO - Generating JSON completed
+[ 2025-08-02 09:19:57,442 ] 59 root - INFO - Passage content loaded successfully.
+[ 2025-08-02 09:19:57,458 ] 63 root - INFO - Schema content loaded successfully.
+[ 2025-08-02 09:19:57,459 ] 65 root - INFO - Generating JSON initialized
+[ 2025-08-02 09:20:20,312 ] 1025 httpx - INFO - HTTP Request: POST https://genai9130607389.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-12-01-preview "HTTP/1.1 200 OK"
+[ 2025-08-02 09:20:20,323 ] 67 root - INFO - Generating JSON completed
