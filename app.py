@@ -40,24 +40,41 @@ def main():
     # Title
     st.title("🗂️ Schema Mapper")
     
-    # File uploads
+    # Sidebar for file uploads and bookmarks
+    st.sidebar.header("📁 File Upload")
+    
+    # Passage file upload in sidebar
+    st.sidebar.subheader("📄 Passage File")
+    passage_file = st.sidebar.file_uploader("Upload text file", type=['txt'], key="passage_upload")
+    
+    if passage_file:
+        passage_content = passage_file.read().decode('utf-8')
+    
+    # Schema file upload in sidebar  
+    st.sidebar.subheader("📋 Schema File")
+    schema_file = st.sidebar.file_uploader("Upload JSON schema", type=['json'], key="schema_upload")
+    
+    if schema_file:
+        schema_content = json.loads(schema_file.read().decode('utf-8'))
+    
+
+    
+    # Main content area - File previews
     col1, col2 = st.columns(2)
     
     with col1:
-        st.header("📄 Passage File")
-        passage_file = st.file_uploader("Upload text file", type=['txt'])
-        
+        st.header("📄 Passage Preview")
         if passage_file:
-            passage_content = passage_file.read().decode('utf-8')
-            st.text_area("Preview", value=passage_content, height=400, disabled=True)
+            st.text_area("Passage Content", value=passage_content, height=200, disabled=True)
+        else:
+            st.info("� Upload a passage file in the sidebar")
     
     with col2:
-        st.header("📋 Schema File")
-        schema_file = st.file_uploader("Upload JSON schema", type=['json'])
-        
+        st.header("📋 Schema Preview") 
         if schema_file:
-            schema_content = json.loads(schema_file.read().decode('utf-8'))
-            st.text_area("Preview", value=schema_content, height=400, disabled=True)
+            st.text_area("Schema Content", value=json.dumps(schema_content, indent=2), height=200, disabled=True)
+        else:
+            st.info("� Upload a schema file in the sidebar")
     
     # Generate button
     if st.button("Generate JSON", type="primary"):
