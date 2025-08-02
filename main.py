@@ -19,7 +19,8 @@ class SchemaMapper:
             azure_deployment=os.getenv("AZURE_OPENAI_LLM_DEPLOYMENT"), 
             api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
             api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-            temperature=0.3,
+            temperature=0.4,
+            top_p=0.9,
             model_kwargs={"response_format": {"type": "json_object"}}
             )
 
