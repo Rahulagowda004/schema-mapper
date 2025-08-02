@@ -13,6 +13,25 @@ st.set_page_config(
     layout="wide"
 )
 
+# Add dark theme CSS
+st.markdown("""
+<style>
+    .dark-json {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border: 1px solid #333 !important;
+    }
+    .dark-json pre {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    .dark-json code {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 def main():
     # Initialize session state
     if 'result' not in st.session_state:
@@ -30,7 +49,7 @@ def main():
         
         if passage_file:
             passage_content = passage_file.read().decode('utf-8')
-            st.text_area("Preview", value=passage_content, height=300, disabled=True)
+            st.text_area("Preview", value=passage_content, height=400, disabled=True)
     
     with col2:
         st.header("📋 Schema File")
@@ -38,7 +57,7 @@ def main():
         
         if schema_file:
             schema_content = json.loads(schema_file.read().decode('utf-8'))
-            st.json(schema_content)
+            st.text_area("Preview", value=schema_content, height=400, disabled=True)
     
     # Generate button
     if st.button("Generate JSON", type="primary"):
