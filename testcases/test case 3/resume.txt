@@ -1,0 +1,44 @@
+RAHUL A GOWDA+91 8217691992 • rahulgowda277@gmail.com • linkedin.com/in/rahulagowda • github.com/Rahulagowda004
+PROFESSIONAL EXPERIENCE
+iTCart Pvt. Ltd., https://itcart.io/ Bangalore, India: AI Executive – Founder’s Office 1st Jun. 2025 – 12th aug. 2025
+• Led AI R&D under CTO Office; designed ML workflows and agentic AI tools for AiXRush in collaboration with USL.
+• Proposed and guided the integration of AI solutions for AiXQP, an AI-driven learning and development platform.
+URSC (ISRO), https://www.ursc.gov.in/ Bangalore, India: Project Trainee 1st Mar. 2025 – 1st Jun. 2025
+• Built Generative and Agentic AI apps (Gyaan Meet, Docx, Coder, Admin) with Team Gyaan.
+• Researched LLM intelligence via question-based evaluation.
+• Developed a CNN model for bone fracture detection with SHAP-based explainability.
+• Created LightRAG-powered chatbots for internal research support.
+Al-Zira Technologies, https://www.linkedin.com/company/al-zira-technology-private-limited/?originalSubdomain=in Remote: AI Engineer Intern (Intern Lead) 1st Oct. 2024 – 1st Mar. 2025
+• Built agentic AI tools using LangChain and LangGraph (e.g., Email Writer, Medical Assistant).
+• Integrated Neo4j, vector embeddings, and email with Dockerized chatbots.
+Aspire Technologies, https://www.aspiretechnology.com/ Bangalore, India: AI Business Intelligence Intern 1st Sept. 2024 – 1st Mar. 2025
+• Worked on preprocessing, visualization, and model building for BI solutions.
+• Built inference pipelines using Pandas, NumPy, Scikit-learn, and Seaborn.
+ACADEMIC PROJECTS
+SmartHealth Assistant – AI Medical Chatbot with Graph Database https://github.com/Rahulagowda004/SmartHealth-Assistant 2025
+Built a production-ready LangGraph system for symptom and vital-based medical assistance.
+• Built a LangGraph system to analyze symptoms/vitals and generate insights via Google Gemini.
+• Modeled patient data as graphs in Neo4j for efficient retrieval and longitudinal tracking.
+• Dockerized and deployed the end-to-end application for scalable production use.
+• Tech stack: LangGraph, Google Gemini, Neo4j, LangChain, Python, Docker.
+Phishing Link and Message Detection Browser Extension https://github.com/Rahulagowda004/Phishy_the_phishing_detector_extension 2024
+Built a phishing detection browser extension using a BERT-based model and integrated web stack.
+• Developed extension with HTML, CSS, JavaScript, and Flask.
+• Used BERT for URL classification with Transformers and PyTorch.
+• Handled data with NumPy and integrated CV, Flask-CORS for communication and version control.
+Several other projects available on my GitHub: github.com/Rahulagowda004
+TECHNICAL SKILLS
+Programming Languages: Python, Java, C
+Tools & Frameworks: Scikit-Learn, TensorFlow, Hugging Face, OpenCV, PyTorch, Docker, FastAPI, Flask
+Machine Learning & Deep Learning: Model Development, Neural Networks, NLP, Deployment
+Generative and Agentic AI: Finetuning LLM, LangChain, LangGraph, crewAI, Phidata, LangSmith, NLP, Vector
+Databases, Graph Databases, RAG, Azure AI foundry, LightRAG, Unsloth, BitsandBytes, Azure cloud
+ACTIVITIES & ACHIEVEMENTS
+Hackathon Competitions 2023 – 2025
+Demonstrated leadership and innovation across multiple hackathons
+• Led the team to victory in VIT Hackathon, showcasing problem-solving and technical skills.
+• Won Hackmania and Securathon, excelling in software innovation and cybersecurity.
+• Participated in several other hackathons, sharpening rapid prototyping and AI integration abilities.
+EDUCATION
+Bachelor of Engineering in Artificial Intelligence @ Vemana Institute of Technology https://vemanait.edu.in/ 1st December 2021 - 1st jun 2025
+Bengaluru, Karnataka
