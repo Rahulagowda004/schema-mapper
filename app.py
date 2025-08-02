@@ -59,77 +59,111 @@ def main():
     
 
     
-    # Main content area - File previews
+    # Main content area - Create two columns
     col1, col2 = st.columns(2)
     
+    # Column 1: File previews (stacked)
     with col1:
+        # Passage Preview in first row
         st.header("📄 Passage Preview")
         if passage_file:
             st.text_area("Passage Content", value=passage_content, height=200, disabled=True)
         else:
             st.info("� Upload a passage file in the sidebar")
-    
-    with col2:
+        
+        # Schema Preview in second row
         st.header("📋 Schema Preview") 
         if schema_file:
             st.text_area("Schema Content", value=json.dumps(schema_content, indent=2), height=200, disabled=True)
         else:
             st.info("� Upload a schema file in the sidebar")
     
-    # Generate button
-    if st.button("Generate JSON", type="primary"):
-        if passage_file and schema_file:
-            with st.spinner("Processing..."):
-                # Create temp files
-                with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as temp_passage:
-                    temp_passage.write(passage_content)
-                    temp_passage_path = Path(temp_passage.name)
-                
-                with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as temp_schema:
-                    json.dump(schema_content, temp_schema)
-                    temp_schema_path = Path(temp_schema.name)
-                
-                # Generate JSON
-                mapper = SchemaMapper()
-                result = mapper.json_generator(temp_passage_path, temp_schema_path)
-                
-                # Clean up
-                os.unlink(temp_passage_path)
-                os.unlink(temp_schema_path)
-                
-                if result:
-                    st.session_state.result = result
-                    st.success("✅ JSON generated successfully!")
-                else:
-                    st.error("❌ Failed to generate JSON")
-        else:
-            st.warning("⚠️ Please upload both files")
+    # Add some spacing
+    st.write("")
     
-    # Show result
-    if st.session_state.result:
+    # Create two columns for buttons side by side
+    btn_col1, btn_col2 = st.columns(2)
+    
+    # Generate button in first column
+    with btn_col1:
+        generate_clicked = st.button("🧩 Generate JSON", type="primary", use_container_width=True)
+    
+    # Download button in second column (only active when result exists)
+    with btn_col2:
+        if st.session_state.result:
+            # Format result for download
+            if isinstance(st.session_state.result, str):
+                try:
+                    download_data = json.loads(st.session_state.result)
+                except:
+                    download_data = st.session_state.result
+            else:
+                download_data = st.session_state.result
+            
+            formatted_download = json.dumps(download_data, indent=2)
+            
+            st.download_button(
+                "💾 Download JSON",
+                data=formatted_download,
+                file_name="output.json",
+                mime="application/json",
+                use_container_width=True,
+                key="download_button"
+            )
+        else:
+            # Empty space when no result - no placeholder button
+            st.write("")
+    
+    # Handle generate button click
+    if generate_clicked:
+            if passage_file and schema_file:
+                with st.spinner("Processing..."):
+                    # Create temp files
+                    with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as temp_passage:
+                        temp_passage.write(passage_content)
+                        temp_passage_path = Path(temp_passage.name)
+                    
+                    with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as temp_schema:
+                        json.dump(schema_content, temp_schema)
+                        temp_schema_path = Path(temp_schema.name)
+                    
+                    # Generate JSON
+                    mapper = SchemaMapper()
+                    result = mapper.json_generator(temp_passage_path, temp_schema_path)
+                    
+                    # Clean up
+                    os.unlink(temp_passage_path)
+                    os.unlink(temp_schema_path)
+                    
+                    if result:
+                        st.session_state.result = result
+                        st.success("✅ JSON generated successfully!")
+                        st.rerun()  # Refresh to show download button
+                    else:
+                        st.error("❌ Failed to generate JSON")
+            else:
+                st.warning("⚠️ Please upload both files")
+    
+    # Show result in column 2
+    with col2:
         st.header("📊 Result")
         
-        # Format result
-        if isinstance(st.session_state.result, str):
-            try:
-                result_dict = json.loads(st.session_state.result)
-            except:
+        if st.session_state.result:
+            # Format result
+            if isinstance(st.session_state.result, str):
+                try:
+                    result_dict = json.loads(st.session_state.result)
+                except:
+                    result_dict = st.session_state.result
+            else:
                 result_dict = st.session_state.result
+            
+            formatted_json = json.dumps(result_dict, indent=2)
+            
+            # Display JSON with styling
+            st.text_area("JSON Output", value=formatted_json, height=493, help="Generated JSON output based on your schema")
         else:
-            result_dict = st.session_state.result
-        
-        formatted_json = json.dumps(result_dict, indent=2)
-        
-        # Display
-        st.text_area("JSON Output", value=formatted_json, height=300)
-        
-        # Download button
-        st.download_button(
-            "💾 Download JSON",
-            data=formatted_json,
-            file_name="output.json",
-            mime="application/json"
-        )
+            st.info("Click 'Generate JSON' to see the result here")
 
 if __name__ == "__main__":
     main()
